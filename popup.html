@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Bootstap stuff -->
+  <link rel="stylesheet" type="text/css" href="external/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="external/css/jquery.timepicker.min.css">
+
+  <script type="text/javascript" src="external/js/jquery-3.5.1.slim.min.js"></script>
+  <script type="text/javascript" src="external/js/popper.min.js"></script>
+  <script type="text/javascript" src="external/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="external/js/jquery.timepicker.min.js"></script>
+
+  <!-- Latest compiled and minified CSS -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"> -->
+
+  <!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>-->
+
+  <!-- Local -->
+  <style type="text/css" >
+    body {
+      min-width: 400px; /* your desired width */
+      max-width: 100%;
+      min-height: 400px;
+      max-height: 100%;
+      position: relative;
+      vertical-align:middle;
+      background: url('external/img/popup_bg.png');
+      background-repeat: repeat;
+      background-position: center;
+      background-size: cover;
+      opacity: 0.9;
+    }
+  </style>
+  <script type="text/javascript" src="popup.js"></script>
+</head>
+<body>
+  <div class="container">
+    <p class="h3">Daily Check-ins</p>
+    <hr style="background:black; height: 2px;">
+    <div class="row">
+      <div class="col-md-12">
+          <button id="loadForm" class="btn btn-info btn-md btn-block" style="width: 100%;">Fill Form</button>
+      </div>
+    </div>
+    <hr style="background:grey; height: 1px;">
+    <div class="row">
+      <div class="col-md-12">
+        <form>
+          <div class="form-group">
+            <input type="link" class="form-control" id="formLinkInput" placeholder="Enter Google Form Link...">
+          </div>
+          <div class="form-group">
+            <button id="formLink" class="btn btn-warning btn-md" style="width: 100%;">Update Form Link</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <hr style="background:grey; height: 1px;">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="form-group">
+          <label for="timepicker">Start reminding me from:</label>
+          <input id="timepicker" class="timepicker form-control" style= "cursor:pointer" readonly='true'>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
